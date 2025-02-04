@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Este é um projeto de controle de estoque desenvolvido com **Next.js**, **Tailwind CSS** e **LocalStorage** para armazenamento de dados no navegador.
 
-## Getting Started
+## Tecnologias Utilizadas
 
-First, run the development server:
+- **Next.js** - Framework para React com renderização otimizada.
+- **Tailwind CSS** - Biblioteca de estilização utilitária para componentes responsivos.
+- **LocalStorage** - Armazena os dados do estoque localmente no navegador.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Funcionalidades
+
+- Adicionar produtos ao estoque com nome, quantidade e preço.
+- Editar informações de produtos.
+- Remover produtos do estoque.
+- Persistência de dados usando LocalStorage.
+
+## Como Rodar o Projeto
+
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/controle-estoque.git
+   ```
+2. Acesse a pasta do projeto:
+   ```sh
+   cd controle-estoque
+   ```
+3. Instale as dependências:
+   ```sh
+   npm install
+   ```
+4. Inicie o servidor de desenvolvimento:
+   ```sh
+   npm run dev
+   ```
+5. Acesse o projeto no navegador: **http://localhost:3000**
+
+## Estrutura do Projeto
+
+```
+controle-estoque/
+├── components/       # Componentes reutilizáveis
+├── pages/            # Páginas principais
+├── styles/           # Arquivos de estilo Tailwind CSS
+├── utils/            # Funções auxiliares
+├── public/           # Imagens e recursos estáticos
+└── package.json      # Configurações do projeto
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contribuição
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contribuições são bem-vindas! Para contribuir:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Fork o repositório.
+2. Crie uma branch para sua funcionalidade: `git checkout -b minha-funcionalidade`
+3. Faça commit das suas alterações: `git commit -m 'Adiciona nova funcionalidade'`
+4. Envie para o repositório remoto: `git push origin minha-funcionalidade`
+5. Abra um Pull Request.
 
-## Learn More
+## Licença
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
